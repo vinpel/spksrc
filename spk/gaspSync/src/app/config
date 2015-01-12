@@ -1,0 +1,16 @@
+{
+    ".url": {
+        "com.synocommunity.packages.gaspSync": {
+            "type": "url",
+            "title": "gaspSync",
+            "desc": "gaspSync (and HTML) PHP Server : light alternative to Firefox 1.5",
+            "allUsers": true,
+            "icon": "images/gaspSync-{0}.png",
+            "protocol": "https",
+            "url": "/",
+            "port": "4000",
+            "allUsers": true,
+            "grantPrivilege": "local"
+        }
+    }
+}

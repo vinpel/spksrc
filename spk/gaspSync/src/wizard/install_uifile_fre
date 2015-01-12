@@ -1,0 +1,70 @@
+[{
+    "step_title": "gaspSync configuration",
+    "items": [
+	 {
+        "type": "textfield",
+        "desc": "Port for gaspSync (configure you'r firewall in consequence).",
+        "subitems": [{
+            "key": "wizard_gasp_port",
+            "defaultValue": "4000",
+            "desc": "entry point"
+        }]
+    },
+	{
+        "type": "textfield",
+        "desc": "Server name (without 'https://',port or ending slash)",
+        "subitems": [{
+            "key": "wizard_calibre_hostname",
+            "defaultValue": "www.pelisset.com",
+            "desc": "gaspSync public hostname"
+        }]
+    },
+	{
+        "type": "textfield",
+        "desc": "Install directory. WARNING: has to end with a / and never use your web directory",
+        "subitems": [{
+            "key": "wizard_gasp_dir",
+            "defaultValue": "/volume1/gaspSync/",
+            "desc": "gaspSync install directory"
+        }]
+    }]
+}, {
+    "step_title": "gaspSync mysql/mariaDB Configuration",
+    "items": [
+	 {
+        "type": "textfield",
+        "desc": "dbhost",
+        "subitems": [{
+            "key": "wizard_gasp_dbhost",
+            "defaultValue": "127.0.0.1",
+            "desc": "host mysql"
+        }]
+    },
+	 {
+        "type": "textfield",
+        "desc": "dbname",
+        "subitems": [{
+            "key": "wizard_gasp_dbname",
+            "defaultValue": "sync",
+            "desc": "database name"
+        }]
+    },
+		 {
+        "type": "textfield",
+        "desc": "dblogin",
+        "subitems": [{
+            "key": "wizard_gasp_dblogin",
+            "defaultValue": "",
+            "desc": "Database user login"
+        }]
+    },
+		 {
+        "type": "textfield",
+        "desc": "host",
+        "subitems": [{
+            "key": "wizard_gasp_dbpassword",
+            "defaultValue": "",
+            "desc": "Database user password"
+        }]
+    }]
+}]
