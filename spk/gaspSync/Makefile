@@ -1,6 +1,6 @@
 SPK_NAME = gaspSync
-SPK_VERS = 0.0.2-RC1
-SPK_REV = 1
+SPK_VERS = 0.0.2-RC2
+#SPK_REV = 1
 SPK_ICON = src/gaspSync.png
 DSM_UI_DIR = app
 
@@ -8,8 +8,9 @@ DEPENDS  = cross/$(SPK_NAME)
 
 MAINTAINER = SynoCommunity
 DESCRIPTION = gaspSync test package
-DESCRIPTION_FRE = Package de test gasp.
+DESCRIPTION_FRE = PHP self hosted Sync-1.5 Server
 ADMIN_URL = /
+ADMIN_PORT = 4000
 RELOAD_UI = yes
 DISPLAY_NAME = gaspSync
 CHANGELOG = "Initiale version"
@@ -47,4 +48,3 @@ gaspSync_extra_install:
 		convert $(SPK_ICON) -thumbnail $${size}x$${size} \
 		        $(STAGING_DIR)/app/images/$(SPK_NAME)-$${size}.png ; \
 	done
-

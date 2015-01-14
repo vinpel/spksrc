@@ -1,27 +1,27 @@
 [{
     "step_title": "gaspSync configuration",
     "items": [
-	 {
+   {
         "type": "textfield",
-        "desc": "Port for gaspSync (configure you'r firewall in consequence).",
+        "desc": "Port for gaspSync (don't touch that !).",
         "subitems": [{
             "key": "wizard_gasp_port",
             "defaultValue": "4000",
-            "desc": "entry point"
+            "desc": "Port for all the exchange"
         }]
     },
-	{
+  {
         "type": "textfield",
-        "desc": "Server name (without 'https://',port or ending slash)",
+        "desc": "domain name of the DiskStation (without 'https://',port or end  '/')",
         "subitems": [{
             "key": "wizard_calibre_hostname",
-            "defaultValue": "www.pelisset.com",
+            "defaultValue": "www.google.fr",
             "desc": "gaspSync public hostname"
         }]
     },
-	{
+  {
         "type": "textfield",
-        "desc": "Install directory. WARNING: has to end with a / and never use your web directory",
+        "desc": "Install directory. WARNING: has to end with a / and NEVER use your web directory",
         "subitems": [{
             "key": "wizard_gasp_dir",
             "defaultValue": "/volume1/gaspSync/",
@@ -29,42 +29,36 @@
         }]
     }]
 }, {
-    "step_title": "gaspSync mysql/mariaDB Configuration",
+    "step_title": "gaspSync : MySQL Configuration",
     "items": [
-	 {
+   {
         "type": "textfield",
-        "desc": "dbhost",
+        "desc": "Root MySQL password",
+        "subitems": [{
+            "key": "wizard_mysql_password_root",
+            "defaultValue": "toor",
+            "desc": ""
+        }]
+    },
+   {
+        "type": "textfield",
+        "desc": "Configuration package",
         "subitems": [{
             "key": "wizard_gasp_dbhost",
             "defaultValue": "127.0.0.1",
-            "desc": "host mysql"
-        }]
-    },
-	 {
-        "type": "textfield",
-        "desc": "dbname",
-        "subitems": [{
+            "desc": "host"
+        },{
             "key": "wizard_gasp_dbname",
-            "defaultValue": "sync",
-            "desc": "database name"
-        }]
-    },
-		 {
-        "type": "textfield",
-        "desc": "dblogin",
-        "subitems": [{
+            "defaultValue": "gaspsync",
+            "desc": "Basename"
+        },{
             "key": "wizard_gasp_dblogin",
             "defaultValue": "",
-            "desc": "Database user login"
-        }]
-    },
-		 {
-        "type": "textfield",
-        "desc": "host",
-        "subitems": [{
+            "desc": "User"
+        },{
             "key": "wizard_gasp_dbpassword",
             "defaultValue": "",
-            "desc": "Database user password"
+            "desc": Password"
         }]
     }]
 }]
